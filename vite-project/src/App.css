@@ -7,10 +7,10 @@
 
 }
 
-.fi-rr-language{
+.fi-rr-language,.fi-sr-arrow-circle-down{
   display: flex;
   align-items: center;
-  color: rgba(190, 190, 190, 0.753);
+  color: var(--meteorite-200);
 }
 
 ul,ol{

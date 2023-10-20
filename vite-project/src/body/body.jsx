@@ -94,22 +94,23 @@ export default function Body() {
                     <h3 className='phrase-home'>Unlocking Potential through Code.</h3>
                     <div >
                         <h1 className='fullname'>Joaquin Sanchez Tonani</h1>
-                        <h2 className='profession'>Web Design</h2>
+                        <h2 className='profession'>Full-Stack Developer</h2>
                         <div className='content'>
-                            <li className="redes"><i className="fi link fi-brands-github"></i></li>
-                            <li className="redes"><i className="fi link fi-brands-linkedin"></i></li>
-                            <li className="redes"><i className="fi link fi-brands-twitter"></i></li>
+                            <li className="redes"><a target='_blank' href="https://github.com/Joaquin-Sanchez-Tonani"><i className="fi link fi-brands-github"></i></a></li>
+                            <li className="redes"><a target='_blank' href="https://www.linkedin.com/in/joaquin-dario-sanchez-tonani-ba7117272/"><i className="fi link fi-brands-linkedin"></i></a></li>
+                            <li className="redes"><a target='_blank' href='https://twitter.com/sanchez_joaq'><i className="fi link fi-brands-twitter"></i></a></li>
                         </div>
                     </div>
                     <div className='img-text'>
                         <img className='image_profile' src={img} alt="joaquin sanchez tonani" />
                         <div>
                             <p>I'm Joaquin, a 20-year-old web developer from Argentina, working as a freelance professional. I specialize in crafting websites, ranging from portfolios to blog pages. </p>
-                            <p>👨‍💻 Since 2 years ago.</p>
+                            <p>👨‍💻 I've been programming for two years.</p>
                             <p>📍 Rosario - Argentina.</p>
                         </div>
                     </div>
                 </div>
+                <a className='down-arrow' href="#projects"><i className="fi fi-sr-arrow-circle-down"></i></a>
             </article>
             <article id="projects">
                 <div className='tittle-projects-phrase'>

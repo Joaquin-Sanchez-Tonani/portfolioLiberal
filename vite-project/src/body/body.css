@@ -9,6 +9,36 @@ section{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    position: relative;
+}
+
+.down-arrow{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 40px;
+    color: var(--meteorite-100);
+    margin-bottom: 50px;
+    margin-left: 26%;
+    animation: down-arrow 3s infinite ease-in-out;
+    transition: .5s;
+}
+
+.fi-sr-arrow-circle-down:hover{
+    color: var(--meteorite-400);
+    transition: .5s;
+}
+
+@keyframes down-arrow {
+    0%{
+        scale: 1.2;
+    }
+    50%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.2;
+    }
 }
 
 .tittles_name_profession{
@@ -404,5 +434,10 @@ section{
     
     .animation-desc > div:nth-child(3){
         animation: none;
+    }
+
+    .down-arrow{
+        margin: 20px;
+        font-size: 35px;
     }
 }
