@@ -113,8 +113,8 @@ export default function Body() {
             </article>
             <article id="projects">
                 <div className='tittle-projects-phrase'>
-                    <h3 ref={myRef} className={myElementIsVisible ? 'phrase-projects animation-phrase' : 'phrase-projects'}>Let's See My Works</h3>
-                    <h2 className='section_tittle'>Projects</h2>
+                    <h3  className={myElementIsVisible ? 'phrase-projects animation-phrase' : 'phrase-projects'}>Let's See My Works</h3>
+                    <h2 ref={myRef} className='section_tittle'>Projects</h2>
                 </div>
                 <div>
                     <ul className='filtered-out'>

@@ -110,6 +110,7 @@ section{
 
 .tittle-projects-phrase{
     display: inline-block;
+    overflow: hidden;
 }
 
 .phrase-projects{
