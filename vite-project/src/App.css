@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  text-align: center;
+  color: var(--text-dark-mode);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+
+}
+
+.fi-rr-language{
+  display: flex;
+  align-items: center;
+  color: rgba(190, 190, 190, 0.753);
+}
+
+ul,ol{
+  padding: 0;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: var(--text-dark-mode);
+}
+
+

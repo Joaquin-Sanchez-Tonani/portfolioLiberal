@@ -1,0 +1,55 @@
+.article-contact{
+    padding: 100px 0 200px 0;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:  0 35% 0 35%;
+    align-items: center;
+    padding: 30px 0;
+    border-radius: 15px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+}
+.input-text{
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: var(--meteorite-800);
+}
+
+.input-text::placeholder{
+    color: aliceblue;
+}
+
+.input-text-area{
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: var(--meteorite-800);
+}
+
+.input-text-area::placeholder{
+    color: aliceblue;
+}
+
+.button-form{
+    background-color: var(--meteorite-600);
+    padding: 10px 0;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.button-form:hover{
+    background-color: var(--meteorite-950);
+    transition: .5s;
+
+}
+

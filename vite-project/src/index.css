@@ -1,0 +1,29 @@
+:root {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--meteorite-50);
+}
+
+body{
+  
+  background: var(--meteorite-400);
+  background: linear-gradient(42deg, var(--meteorite-800) 16%, var(--meteorite-950) 82%);
+}
+
+:root{
+
+  
+  
+  --meteorite-50: #f5f4fe;
+--meteorite-100: #edebfc;
+--meteorite-200: #dedafa;
+--meteorite-300: #c5bcf6;
+--meteorite-400: #a796ef;
+--meteorite-500: #8a6be7;
+--meteorite-600: #794cdb;
+--meteorite-700: #693ac7;
+--meteorite-800: #5830a7;
+--meteorite-900: #3d2272;
+--meteorite-950: #2c185d;
+
+
+}
