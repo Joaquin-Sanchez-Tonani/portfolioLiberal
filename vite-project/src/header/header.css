@@ -1,7 +1,6 @@
 header{
     display: flex;
-    justify-content: center;
-    gap: 200px;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
     position: fixed;
@@ -10,20 +9,26 @@ header{
     background: linear-gradient(42deg, var(--meteorite-700) 16%, var(--meteorite-950) 82%);
 }
 
+.logo-div{
+    width: 10%;
+}
+
 .logo{
     color: var(--meteorite-50);
-    
 }
 
 .idioma-darkMode{
     display: flex;
     align-items: center;
     gap: 15px;
+    width: 10%;
 }
+
 
 .header_ul{
     display: flex;
     gap: 15px;
+
 }
 
 .header_links{
@@ -56,30 +61,35 @@ header{
     box-shadow: 1px 1px 10px 2px var(--meteorite-400);
 }
 
+
+.language{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.164);
+    border-radius: 61% 39% 72% 28% / 16% 88% 12% 84%;
+    padding: 3px 10px;
+    transition: .5s;
+}
+
+.language:hover{
+    background-color: var(--meteorite-500);
+    transition: .5s;
+}
 @media (max-width:768px) {
-    header{
-        gap: 0;
-        flex-direction: column;
+    .header_section{
+        font-size: 12px;
     }
-
-    .logo{
-        display: none;
+    .header_section_active{
+        font-size: 12px;
     }
     
-    .idioma-darkMode{
-        display: none;
-    }
-    
-    .header_ul{
-        gap: 0;
-    }
-
     .header_section:hover{
-        transition: .5s;
         box-shadow: none;
+    }
+    
+    .logo{
+        font-size: 25px;
     }
 
 }
-
-
-

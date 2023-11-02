@@ -61,7 +61,7 @@ section{
     font-size: 17px;
     color: rgb(236, 236, 236);
     text-align: left;
-    width: 500px;
+    width: 600px;
     padding: 5px 15px;
     background: radial-gradient(circle, var(--meteorite-700), transparent);
     animation: frase 5s alternate;
@@ -70,10 +70,10 @@ section{
   
   @keyframes frase {
     from {
-        width: 300px;
+        width: 400px;
     }
     to {
-        width: 500px;
+        width: 600px;
     }
   }
 
@@ -130,8 +130,22 @@ section{
     display: flex;
     background-color: var(--meteorite-600);
     justify-self: left;
-    border-radius: 50%;
+    border-radius: 30% 70% 31% 69% / 80% 29% 71% 20%;
     opacity: .8;
+    animation: background-image 2s infinite alternate ease;
+}
+
+@keyframes background-image {
+    from{
+        background-color: var(--meteorite-700);
+        border-radius: 30% 70% 31% 69% / 80% 29% 71% 20%;
+    }
+    to{
+        background-color: var(--meteorite-900);
+
+        border-radius: 61% 39% 72% 28% / 24% 76% 24% 76%;
+    }
+    
 }
 
 .image-div{
@@ -320,7 +334,22 @@ section{
     border-radius: 15px;
 }
 
+@media (max-width:1460px) {
+    .img-text{
+        margin: 0;
+    }
+    
+    .tittles_name_profession{
+        width: 60%;
+    }
+    
+    
+}
+
 @media (max-width:768px) {
+    .phrase-home{
+        font-size: 13px;
+    }
     section{
         gap: 0;
     }
@@ -441,3 +470,4 @@ section{
         font-size: 35px;
     }
 }
+

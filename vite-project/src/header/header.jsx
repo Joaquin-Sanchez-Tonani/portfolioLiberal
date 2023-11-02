@@ -1,22 +1,33 @@
 import { useState, useEffect, useRef } from 'react'
 import './header.css'
 import useStore from '../zustand' // Importa el store
+import { useTranslation } from 'react-i18next'
 
 export default function Header(){
-    
-    const sections = [{name: 'PROJECTS', ruta: '#projects'},{name: 'EDUCATION', ruta: '#education'},{name: 'CONTACT', ruta: '#contact'}]
+    const {t} = useTranslation()
+
+    const sections = [{name: t("section1"), ruta: '#projects'},{name: t("section2"), ruta: '#education'},{name: t("section3"), ruta: '#contact'}]
 
    
     const myElementIsVisible = useStore((state) => state.myElementIsVisible);
     const myElementIsVisible2 = useStore((state) => state.myElementIsVisible2);
     const myElementIsVisible3 = useStore((state) => state.myElementIsVisible3);
+    const language = useStore((state) => state.language);
+    const setLanguage = useStore((state) => state.setLanguage);
 
+    const changeLanguage = () =>{
+        if(language === 'es'){
+            setLanguage('en')
+        }else{
+            setLanguage('es')
+        }
+    }
 
     return(
         <header>
-            <div>
+            <div className='logo-div'>
                 <h1 className='logo'>
-                    JS
+                    JST
                 </h1>
             </div>
             <ul className='header_ul'>
@@ -37,7 +48,7 @@ export default function Header(){
             </ul>
             <div className='idioma-darkMode'>
                 <button>
-                    <i className="fi fi-rr-language"></i>
+                    <p className='language' onClick={changeLanguage}>{language === 'en' ? 'EN' : 'ES'}</p>
                 </button>
                 
             </div>
