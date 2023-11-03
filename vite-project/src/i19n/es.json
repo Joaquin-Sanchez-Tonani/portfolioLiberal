@@ -27,5 +27,12 @@
     "alertaNoEnviada": "No ha sido posible enviar el correo.",
     "require1": "Se requiere nombre.",
     "require2": "Se requiere correo electrónico.",
-    "require3": "Se requiere mensaje."
+    "require3": "Se requiere mensaje.",
+    "portfolio": "Portafolio",
+    "ecommerce": "Sitio Comercial",
+    "converter": "Convertidor de Moneda",
+    "calculator": "Calculadora",
+    "hangman": "Ahorcado",
+    "lets": "Les Presento Mis Proyectos",
+    "messageSent": "Mensaje enviado!"
 }

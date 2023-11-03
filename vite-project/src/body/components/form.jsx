@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
+import useStore from "../../zustand";
 import emailjs from '@emailjs/browser';
 import './form.css'
 import { useTranslation } from 'react-i18next';
@@ -21,7 +22,12 @@ function Form() {
     const pressMessage = (event) => {
       setMessage(event.target.value);
     };
-  
+    const language = useStore((state) => state.language);
+
+    useEffect(()=>{
+      setError('');
+    },[language])
+ 
     const send = (event) => {
       event.preventDefault();
       const templateParams = {
@@ -93,7 +99,7 @@ function Form() {
         {error.mensaje && <span className="error-text">{error.mensaje}</span>}
   
         <button className="button-form" type="submit">{t("send")}</button>
-        {isSubmitted && !error.nombre && !error.mensaje && !error.email && <span className="sended-text">¡Message sent!</span>}
+        {isSubmitted && !error.nombre && !error.mensaje && !error.email && <span className="sended-text">{t("messageSent")}</span>}
       </form>
     );
   }

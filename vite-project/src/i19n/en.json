@@ -27,5 +27,12 @@
     "alertaNoEnviada": "Can't send email correctly.",
     "require1": "Name is required.",
     "require2": "Email is required.",
-    "require3": "Message is required."
+    "require3": "Message is required.",
+    "portfolio": "Portfolio",
+    "ecommerce": "Ecommerce Site",
+    "converter": "Converter",
+    "calculator": "Calculator",
+    "hangman": "Hangman",
+    "lets": "Let's See My Works",
+    "messageSent": "¡Message sent!"
 }

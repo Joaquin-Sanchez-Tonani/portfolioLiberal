@@ -27,7 +27,8 @@ import { useTranslation } from 'react-i18next';
 
 export default function Body() {
     
-    
+    const language = useStore((state) => state.language);
+
     const {t} = useTranslation()
     
     const myElementIsVisible = useStore((state) => state.myElementIsVisible);
@@ -40,11 +41,11 @@ export default function Body() {
     const setMyElementIsVisible3 = useStore((state) => state.setMyElementIsVisible3);
 
     const projects = [
-        { name: "Calculator", type: t("filtrado3"), img: Project1, alt: "calculadora", date: "07/05/2023" },
-        { name: "Ecommerce site", type: t("filtrado2"), img: Project3, alt: "ecommerce site", date: "12/08/2023", path: 'https://joaquin-sanchez-tonani-ecommerce.netlify.app/' },
-        { name: "Hangman", type: t("filtrado3"), img: Project4, alt: "hangman", date: "17/10/2023", path: 'https://hangmanjoaquin.netlify.app/' },
-        { name: "Converter", type: t("filtrado3"), img: Project2, alt: "converter", date: "03/06/2023" },
-        { name: "Portfolio", type: t("filtrado2"), img: Project5, alt: "portfolio", date: "03/04/2023", path: 'https://joaquinsancheztonani.netlify.app/' }
+        { name: t("calculator"), type: t("filtrado3"), img: Project1, alt: "calculadora", date: "07/05/2023" },
+        { name: t("ecommerce"), type: t("filtrado2"), img: Project3, alt: "ecommerce site", date: "12/08/2023", path: 'https://joaquin-sanchez-tonani-ecommerce.netlify.app/' },
+        { name: t("hangman"), type: t("filtrado3"), img: Project4, alt: "hangman", date: "17/10/2023", path: 'https://hangmanjoaquin.netlify.app/' },
+        { name: t("converter"), type: t("filtrado3"), img: Project2, alt: "converter", date: "03/06/2023" },
+        { name: t("portfolio"), type: t("filtrado2"), img: Project5, alt: "portfolio", date: "03/04/2023", path: 'https://joaquinsancheztonani.netlify.app/' }
     ];
 
 
@@ -65,7 +66,9 @@ export default function Body() {
             setFiltered(newFilter);
         }
     }
-
+    useEffect(()=>{
+       filterProject('All')
+    },[language])
     const filterLi = [t("filtrado1"), t("filtrado2"), t("filtrado3"), t("filtrado4")]
 
     // animation useRef
@@ -129,7 +132,7 @@ export default function Body() {
             </article>
             <article id="projects">
                 <div className='tittle-projects-phrase'>
-                    <h3  className={myElementIsVisible ? 'phrase-projects animation-phrase' : 'phrase-projects'}>Let's See My Works</h3>
+                    <h3  className={myElementIsVisible ? 'phrase-projects animation-phrase' : 'phrase-projects'}>{t("lets")}</h3>
                     <h2 ref={myRef} className='section_tittle'>{t("section1")}</h2>
                 </div>
                 <div>
