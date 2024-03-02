@@ -10,7 +10,7 @@
 .fi-rr-language,.fi-sr-arrow-circle-down{
   display: flex;
   align-items: center;
-  color: var(--meteorite-200);
+  color: var(--zircon-200);
 }
 
 ul,ol{

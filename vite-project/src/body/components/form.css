@@ -22,7 +22,7 @@
     border: 1px solid white;
     padding: 10px 20px;
     border-radius: 15px;
-    background-color: var(--meteorite-800);
+    background-color: var(--zircon-800);
 }
 
 .input-text::placeholder{
@@ -33,7 +33,7 @@
     border: 1px solid white;
     padding: 10px 20px;
     border-radius: 15px;
-    background-color: var(--meteorite-800);
+    background-color: var(--zircon-800);
 }
 
 .input-text-area::placeholder{
@@ -41,14 +41,14 @@
 }
 
 .button-form{
-    background-color: var(--meteorite-600);
+    background-color: var(--zircon-600);
     padding: 10px 0;
     border-radius: 15px;
     transition: .5s;
 }
 
 .button-form:hover{
-    background-color: var(--meteorite-950);
+    background-color: var(--zircon-950);
     transition: .5s;
 
 }
